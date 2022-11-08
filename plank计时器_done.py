@@ -16,7 +16,7 @@ def history():
     #将date列作为index
     df.index = df['Date']
     st.bar_chart(df[["Time6","Time5","Time4","Time3","Time2","Time1"]])
-    # st.dataframe(df)
+    st.dataframe(df)
 
 st.sidebar.subheader("workout计时器")
 st.sidebar.markdown("""    
